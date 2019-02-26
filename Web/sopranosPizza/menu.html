@@ -1,0 +1,233 @@
+<?php
+$korting = false;
+$pizzaGroten = $_POST['groten'];
+$prijs = 0;
+$keuzesoort = $_POST['soort']
+
+
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="NL">
+<head>
+    <title>🍕 Sopranos pizza menu🍕</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"  type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+   
+
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+    }
+   
+    .container > * {
+        grid-column: 1 / span 12;
+    }
+    @media (min-width: 600px) {
+        
+        .ads {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        .content, .footer {
+            grid-column: 4 / span 9;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            width: 100%;
+        }
+    }
+    @media (min-width: 900px) {
+        
+        .content {
+            grid-column: 2 / span 8;
+        }
+        .ads {
+            grid-column: 10 / span 3;
+            grid-row: 3;
+        }
+        .footer {
+            grid-column: 1 / span 12;
+            width: 100%;
+        }
+    }
+    .container {
+        max-width: 1400px;
+    }
+    
+    
+    </style>
+    
+</head>
+<body>
+   <center> <div class="container">
+        <header class="header">
+           <center><a href="/"><h1>🍕Sopranos pizza🍕</h1></a></center>
+        </header>
+        <div id="nav" class="navi">    
+        <div class="header">
+            <a class="link" href="/" aria-label="Sopranos Home Page" ><menu class="logo"></menu></a>
+    
+            <ul class="menuitem">
+    
+                <a href="#aanbiedingen" class="aanbiedingen-bt link" ><i class="fas fa-pizza-slice"></i>&nbsp;Aanbiedingen</a>&nbsp;&nbsp;&nbsp;
+                <a href="/menu.html" class="menu-bt link"><i class="far fa-list-alt"></i>&nbsp;Menu</a>&nbsp;&nbsp;&nbsp;
+                <a href="/contact.html" class="menu-bt link"><i class="fas fa-phone"></i>&nbsp;Neem contact op</a>&nbsp;
+                        
+            </ul>
+    
+        
+        </div>
+    </div>
+    <div class="row">
+
+        
+    </div>
+    <div class="row">
+            <div class="column">
+                    <h2>🍕Magarita🍕</h2>
+                    <p><a href="/menu" title="🍕Magarita🍕"><img src="/afbeeldingen/pizza/magarita.png" alt="onze pizza's" height="250px"></a></p>
+                    <p></p>
+                    <form name="keuze-grote">
+                            <select name="groten" class="dropdown">
+                                    <option value="25" class="dropdown">(25CM) Medium</option>
+                                    <option value="30"class="dropdown">(30CM) Normal</option>
+                                    <option value="35"class="dropdown">(35CM) Large</option>
+                                    <option value="40"class="dropdown">(40CM Famalie XXL)</option>
+                                </select>
+                    </form> <br>
+                    <form name="keuze-soort">
+                            <select name="soort" class="dropdown">
+                                    <option value="classic" class="dropdown">Classic</option>
+                                    <option value="cheesycrust"class="dropdown">Cheesy Crust</option>
+                                </select>
+                    </form>
+                    <p><a href="/menu/magarita" target="_parent" title="Bekijk de pizza"><span class="red-button">Bekijk de pizza</span></a></p>
+
+            </div>
+            <div class="column">
+                    <h2>🍕Salami🍕</h2>
+                    <p><a href="/menu" title="🍕Salami🍕"><img src="/afbeeldingen/pizza/salami.png" alt="onze pizza's" height="250px"></a></p>
+                    <p>Bekijk hier het menu. je krijgt hier een overzicht van alle pizza's op ons menu en alle bijgerechten!</p>
+                    <form name="keuze-grote">
+                            <select name="groten" class="dropdown">
+                                    <option value="25" class="dropdown">(25CM) Medium</option>
+                                    <option value="30"class="dropdown">(30CM) Normal</option>
+                                    <option value="35"class="dropdown">(35CM) Large</option>
+                                    <option value="40"class="dropdown">(40CM Famalie XXL)</option>
+                                </select>
+                    </form>
+                    <br>
+                    <form name="keuze-soort">
+                            <select name="soort" class="dropdown">
+                                    <option value="classic" class="dropdown">Classic</option>
+                                    <option value="cheesycrust"class="dropdown">Cheesy Crust</option>
+                                </select>
+                    </form>
+                    <p><a href="/menu-pizza/salami.html" target="_parent" title="Bekijk de pizza"><span class="red-button">Bekijk de pizza</span></a></p>
+                    
+
+            </div>
+            <div class="column">
+                    <h2>🍕Carcazone🍕</h2>
+                    <p><a href="/menu" title="Menu"><img src="/afbeeldingen/pizza/niet-beschikbaar.png" alt="onze pizza's" height="250px"></a></p>
+                    <p>Bekijk hier het menu. je krijgt hier een overzicht van alle pizza's op ons menu en alle bijgerechten!</p>
+                    <form name="keuze-grote">
+                            <select name="groten" class="dropdown">
+                                    <option value="25" class="dropdown">(25CM) Medium</option>
+                                    <option value="30"class="dropdown">(30CM) Normal</option>
+                                    <option value="35"class="dropdown">(35CM) Large</option>
+                                    <option value="40"class="dropdown">(40CM Famalie XXL)</option>
+                                </select>
+                    </form>
+                    <br>
+                    <form name="keuze-soort">
+                            <select name="soort" class="dropdown">
+                                    <option value="classic" class="dropdown">Classic</option>
+                                    <option value="cheesycrust"class="dropdown">Cheesy Crust</option>
+                                </select>
+                    </form>
+                    <p><a href="/menu-pizza/" target="_parent" title="Bekijk de pizza"><span class="red-button">Bekijk de pizza</span></a></p>
+
+            </div>
+            <div class="column">
+                    <h2>🍕Hawai🍕</h2>
+                    <p><a href="/menu" title="Menu"><img src="/afbeeldingen/pizza/niet-beschikbaar.png" alt="onze pizza's" height="250px"></a></p>
+                    <p>Tomatensaus, mozzarella, ham, ananas & extra kaas.Onze frisse ananas gaat heel erg goed samen met een pizza.<br> In combinatie met onze smakelijke ham is deze pizza één van onze persoonlijke favorieten. Bij sopranos  is deze variant altijd de moeite waard.</p>
+                    <form name="keuze-grote">
+                            <select name="groten" class="dropdown">
+                                    <option value="25" class="dropdown">(25CM) Medium</option>
+                                    <option value="30"class="dropdown">(30CM) Normal</option>
+                                    <option value="35"class="dropdown">(35CM) Large</option>
+                                    <option value="40"class="dropdown">(40CM Famalie XXL)</option>
+                                </select>
+                    </form>
+                    <br>
+                    <form name="keuze-soort">
+                            <select name="soort" class="dropdown">
+                                    <option value="classic" class="dropdown">Classic</option>
+                                    <option value="cheesycrust"class="dropdown">Cheesy Crust</option>
+                                </select>
+                    </form>
+                    <p><a href="/menu-pizza/" target="_parent" title="Bekijk de pizza"><span class="red-button">Bekijk de pizza</span></a></p>
+
+            </div>
+            <div class="column">
+                    <h2>🍕Custom🍕</h2>
+                    <p><a href="/menu" title="Menu"><img src="/afbeeldingen/pizza/niet-beschikbaar.png" alt="onze pizza's" height="250px"></a></p>
+                    <p>Bekijk hier het menu. je krijgt hier een overzicht van alle pizza's op ons menu en alle bijgerechten!</p>
+                    <form name="keuze-grote">
+                            <select name="groten" class="dropdown">
+                                    <option value="25" class="dropdown">(25CM) Medium</option>
+                                    <option value="30"class="dropdown">(30CM) Normal</option>
+                                    <option value="35"class="dropdown">(35CM) Large</option>
+                                    <option value="40"class="dropdown">(40CM Famalie XXL)</option>
+                                </select>
+                    </form>
+                    <br>
+                    <form name="keuze-soort">
+                            <select name="soort" class="dropdown">
+                                    <option value="classic" class="dropdown">Classic</option>
+                                    <option value="cheesycrust"class="dropdown">Cheesy Crust</option>
+                                </select>
+                    </form>
+                    <p><a href="/menu-pizza/" target="_parent" title="Bekijk de pizza"><span class="red-button">Bekijk de pizza</span></a></p>
+
+            </div>
+          </div>
+        
+        <aside class="ads">
+            Advertentie's
+        </aside>
+        
+    </div>
+    <footer class="footer row">
+        
+                <ul class="footer-links">
+                        <a class="link" href="/index.html">🍕Sopranos pizza</a>&nbsp;&nbsp;&nbsp;
+                        <a class="link" href="/menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
+                        <a class="link" href="/aanbiedingen" >Aanbiedingen🍕</a>&nbsp;&nbsp;&nbsp;
+        
+                </ul>
+                
+        
+        <ul>
+            <img src="/afbeeldingen/contact.icon-footer.png">
+            <address>Paxlaan, hoofddorp</address>
+        </ul>
+        
+</footer>
+</center>
+
+</body>
+
+
+</html>

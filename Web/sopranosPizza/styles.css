@@ -1,0 +1,165 @@
+html {
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+*,*:before,*:after {
+	box-sizing: inherit;
+}
+.container {
+	margin: 30px;
+}
+.container > * {
+	
+	padding: 10px;
+}
+.ad{
+	width: 250px;
+	float: right;
+}
+h1{
+
+	color: red;
+}
+
+.aanbiedingen-bt{
+color: white;
+font-size: 25px;
+float: initial;
+}
+.menu-bt{
+color: white;
+font-size: 25px;
+
+}
+.menuitem{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		float: right;
+		
+	
+}
+.navi{
+	background-color: #000;
+	position: sticky;
+
+	
+}
+.contact{
+	color: white;
+	font-size: 25px;
+}
+
+body{
+	background-image: url("/afbeeldingen/wood-background.jpg"); 
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.red-button{
+		background-color: red;
+		width: 250px;
+	  color: #000;
+	  border-radius: 2px;
+		padding: 5px;
+		width: 20%;
+	  
+  }
+.red-button:hover{ 
+		background-color: green;
+		width: 250px;
+	  color: black;
+	  border-radius: 12px;
+		padding: 5px;
+		
+  }
+  
+.column{
+	float: left;
+	width: 33%;
+  }
+.menu{
+		position: relative;
+		display: table;
+		float: left;
+		padding: 10px;
+		width: 300px;
+		height: 300px;
+		left: 20px;
+		top: 20px;
+		
+		
+		}
+
+  /* Clear floats after the columns */
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+	}
+	
+.column2{
+	  float: left;
+	  width: 50px;
+	  height: 50px;
+  }
+a{
+	text-decoration: none;
+	color: white; 
+}
+.link{
+	color: white;
+}
+.link:hover{
+	color: #00FF00;
+}
+footer{
+	background-color: black;
+	height: 250px;
+	color: white;
+	
+  }
+.logo{
+	background-image: url("/afbeeldingen/mail.icon.png");
+}
+.footer-links{
+	top: 50%;
+
+}
+.position{
+	float: left;
+}
+.dropdown{
+	width: 150px;
+	border-style: solid;
+	border-color: transparent transparent #b7b7b7 transparent;
+}
+.kaart{
+  -ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	right: 10px;
+	width: 250px;
+	position: absolute;
+	position: fixed;
+	top: 250px;
+	z-index: 1;
+}
+.winkelmand{
+	position: relative;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+	border-radius: 3px;
+	
+}
+.toevoegen{
+	position: inline;
+	position: relative;
+	margin-top: 10%;
+	top: 20%;
+	vertical-align: bottom;
+}
+
