@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="NL">
+<head>
+    <title>ðŸ• Sopranos pizzaðŸ•</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"  type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+   
+
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+    }
+   
+    .container > * {
+        grid-column: 1 / span 12;
+    }
+    @media (min-width: 600px) {
+        
+        .ads {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        .content, .footer {
+            grid-column: 4 / span 9;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            width: 100%;
+        }
+    }
+    @media (min-width: 900px) {
+        
+        .content {
+            grid-column: 2 / span 8;
+        }
+        .ads {
+            grid-column: 10 / span 3;
+            grid-row: 4;
+            max-width: 450px;
+        }
+        .footer {
+            grid-column: 1 / span 12;
+            width: 100%;
+        }
+    }
+    .container {
+        max-width: 1400px;
+    }
+    
+    
+    </style>
+    
+</head>
+<body>
+   <center> <div class="container">
+        <header class="header">
+           <center><a href="/"><h1>ðŸ•Sopranos pizzaðŸ•</h1></a></center>
+        </header>
+        <div id="nav" class="navi">    
+        <div class="header">
+            <a class="link" href="/" aria-label="Sopranos Home Page" ><menu class="logo"></menu></a>
+    
+            <ul class="menuitem">
+    
+                <a href="#aanbiedingen" class="aanbiedingen-bt link"><i class="fas fa-pizza-slice"></i>&nbsp;Aanbiedingen</a>&nbsp;&nbsp;&nbsp;
+                <a href="/menu.php" class="menu-bt link"><i class="far fa-list-alt"></i>&nbsp;Menu</a>&nbsp;&nbsp;&nbsp;
+                <a href="/contact.html" class="menu-bt link"><i class="fas fa-phone"></i>&nbsp;Neem contact op</a>&nbsp;
+                        
+            </ul>
+    
+        
+        </div>
+    </div>
+    <aside class="ads">
+        <div>
+            <p> <img src="/afbeeldingen/aanbieding.jpg" alt="aanbieding"></p>
+        </div>
+    </aside>
+    <div class="row">
+            <div class="column">
+                    <h2>Onze pizza's ðŸ•</h2>
+                    <p><a href="/menu.php" title="Menu"><img id="__mcenew" src="https://dominos.nl/media/2231/dominos_homepage_pizza.jpg" alt="onze pizza's" height="250px"></a></p>
+                    <p>Bekijk hier het menu. je krijgt hier een overzicht van alle pizza's op ons menu en alle bijgerechten!</p>
+                    <p><a href="/menu-pizza/" target="_parent" title="Menu pizza"><span class="red-button">Bekijk het menu</span></a></p>
+
+            </div>
+            <div class="column">
+                    <h2>Neem Contact op </h2>
+                    <p><a href="/contact.html" title="Menu"><img id="__mcenew" src="/afbeeldingen/contact-round.png" alt="contact ons" width="250px" height="250px"></a></p>
+                    <p>Neem nu contact op met ons</p>
+                    <p><a href="/contact.html" target="_parent" title="Menu pizza"><span class="red-button">Contact op nemen</span></a></p>
+            </div>
+          </div>
+        
+    </div>
+    
+    <footer class="footer row">
+        
+                <ul class="footer-links">
+                        <a class="link" href="/index.html">ðŸ•Sopranos pizza</a>&nbsp;&nbsp;&nbsp;
+                        <a class="link" href="/menu.php">Menu</a>&nbsp;&nbsp;&nbsp;
+                        <a class="link" href="/aanbiedingen" >AanbiedingenðŸ•</a>&nbsp;&nbsp;&nbsp;
+        
+                </ul>
+                
+        
+        <ul>
+            <img src="/afbeeldingen/contact.icon-footer.png">
+            <address>Paxlaan, hoofddorp</address>
+        </ul>
+        
+</footer>
+</center>
+        
+</body>
+
+</html>
