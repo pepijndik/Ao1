@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="NL">
+<head>
+    <title>ðŸ• Sopranos pizza - Contact ðŸ•</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"  type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+   
+
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+    }
+   
+    .container > * {
+        grid-column: 1 / span 12;
+    }
+    @media (min-width: 600px) {
+        
+        .ads {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        .content, .footer {
+            grid-column: 4 / span 9;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+        }
+    }
+    @media (min-width: 900px) {
+        
+        .content {
+            grid-column: 2 / span 8;
+        }
+        .ads {
+            grid-column: 10 / span 3;
+            grid-row: 3;
+        }
+        .footer {
+            grid-column: 1 / span 12;
+        }
+    }
+    .container {
+        max-width: 1400px;
+    }
+    
+    
+    </style>
+    
+</head> 
+<body>
+   <center> <div class="container">
+        <header class="header">
+           <center><a href="/"><h1>ðŸ•Sopranos pizzaðŸ•</h1></a></center>
+        </header>
+        <div id="nav" class="navi">    
+        <div class="header">
+            <a href="/" aria-label="Sopranos Home Page"><menu class="logo"></menu></a>
+    
+            <ul class="menuitem">
+    
+                <a href="/index.html" class="aanbiedingen-bt">Aanbiedingen</a>&nbsp;&nbsp;&nbsp;
+                <a href="/menu.html" class="menu-bt">Menu</a>&nbsp;&nbsp;&nbsp;
+                <a href="/contact.html" class="menu-bt">Neem contact op</a>&nbsp;
+                        
+            </ul>
+            
+    
+        
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+        <h2><i class="fas fa-map"></i>Waar zitten wij?</h2>
+            <div class="mapouter">
+                    <div class="gmap_canvas position">
+                        <iframe width="425" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=paxlaan%2026%20hoofddorp&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe><a href="https://www.embedgooglemap.net">
+                        </a>
+                    </div>
+                    <style>.mapouter{text-align:right;height:250px;width:425px;}
+                    .gmap_canvas {overflow:hidden;background:none!important;height:250px;width:425px;}
+                    </style>
+                    </div>
+                
+                <aside class="ads">
+                    Advertentie's
+                </aside>
+                
+            </div>
+    </div>
+</center>
+<footer class="footer">
+                <center>
+                    <ul>
+                        <a href="/">ðŸ•Sopranos pizzaðŸ•</a>
+                        <a href="/menu.html">Menu</a>
+                        <a href="/">Aanbiedingen</a>
+
+                </ul>
+                <ul>
+                    <img src="/afbeeldingen/contact.icon-footer.png">
+                    <address>Paxlaan, hoofddorp</address>
+                </ul>
+                </center>
+                
+        </footer>
+</body>
+
+</div>
+</html>
