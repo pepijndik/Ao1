@@ -1,3 +1,1 @@
-Alles voor hoofdstuk 3 Php leerjaar 1.
-
-Groetjes pepijn :D
+Hier vind je alles Voor PHP Verdieping Hoofdstuk 3
