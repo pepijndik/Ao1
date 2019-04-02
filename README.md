@@ -1,9 +1,29 @@
-# Ao1
-Welkom!
-In deze gitHub Repo zul je alles vinden voor de projecten van Applicatie ontwikkeling leerjaar 1 op het novaCollege.
+# Applicatie en media ontwikkelaar Leerjaar 1
 
-Iedereen kan de Bestanden en coding files bekijken en downloaden.
-Gebruik ze gerust!
+alle opdrachten van Novacollege Ao1 Word hier geuplaud.
 
-Groetjes pepijn
+## Hoe te gebruiken?
 
+Download of Clone de [Git repo](https://github.com/pepijndik/Ao1)
+
+```bash
+https://github.com/pepijndik/Ao1
+```
+
+##  Verschillende Vakken
+
+```bash
+1. WebProgrammeren
+2. Php
+3. SQL
+4. Csharp
+```
+
+## Made possible by:
+@pdik,  @samir, @jay
+
+### altijd up-to-date houden!
+Download altijd de nieuwste versie
+
+## License
+[Pdik systems](https://pdik.nl/)
