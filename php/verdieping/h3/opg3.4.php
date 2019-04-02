@@ -8,7 +8,7 @@ for($i=0; $i<5; $i++){
     if(ord($var)>65 && ord($var) <90){
         echo(" Goed");
     } else{
-        echo("Fout");
+        echo("Fout lul");
     }
 }
 
