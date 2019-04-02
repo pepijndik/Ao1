@@ -1,14 +1,14 @@
 
 <?php
-$aantal@ =0;
+$aantal = false;
 $email = $_POST["mail"];
-for($i= 0, $i <= strlen($email); $i++{
-    $var = substr($email, $i ,1) ;
+for($i= 0, $i <= strlen($email); $i++;){
+    $var = substr($email, $i ,1);
     if($var == "@") {
-        $aantal@ = 1;
+        $aantal = true;
     }
-})
-if($aantal@ > 0){
-    echo "Goed gekeurd"
+}
+if($aantal == true){
+    echo ("Goed gekeurd");
 }
 ?>
