@@ -1,6 +1,13 @@
 <?php
 
 $naam = array('hakim', 'Davor suker', 'Diego Maradona', 'Mesmet ozil', 'Michael Laudrup');
-$var = substr($naam,0,1);
-ord($var);
+
+
+for($i=0; $i<5; $i++){
+    $var = substr($naam[$i],0,1);
+    if(ord($var)>65 && ord($var) <90){
+    
+    }
+}
+
 ?>
