@@ -1,6 +1,6 @@
 <?php
 
-$naam = array('hakim', 'Davor suker', 'Diego Maradona', 'Mesmet ozil', 'Michael Laudrup');
+$naam = array('Pep', 'Dope', 'Samir Dope', 'Mesmet ozil', 'Michael Laudrup');
 
 
 for($i=0; $i<5; $i++){
