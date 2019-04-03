@@ -1,7 +1,7 @@
 # Applicatie en media ontwikkelaar Leerjaar 1
-![alt text](https://www.pdik.nl/portfolio/logopepijn.jpg)
 alle opdrachten van Novacollege Ao1 Worden hier geuplaud.
-
+![alt text](https://www.pdik.nl/portfolio/logopepijn.jpg)
+![alt text](https://www.novacollege.nl/Content/img/logo.png)
 ## Hoe te gebruiken?
 
 Download of Clone de [Git repo](https://github.com/pepijndik/Ao1)
