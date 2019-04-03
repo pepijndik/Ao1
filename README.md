@@ -4,7 +4,7 @@ alle opdrachten van Novacollege Ao1 Worden hier geuplaud.
 
 ## Hoe te gebruiken?
 
-Download of Clone de [Git repo](https://github.com/pepijndik/Ao1)
+Download of Clone de [Git repo](https://pdik.nl/portfolio/logopepijn.jpg)
 
 ```bash
 https://github.com/pepijndik/Ao1
