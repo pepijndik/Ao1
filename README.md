@@ -1,5 +1,5 @@
 # Applicatie en media ontwikkelaar Leerjaar 1
-![alt text](https://raw.githubusercontent.com/pepijndik/Ao1/blob/master/afbeeldingen/logopepijn.jpg)
+![alt text](https://raw.https://github.com/pepijndik/Ao1/blob/master/afbeeldingen/logopepijn.jpg)
 alle opdrachten van Novacollege Ao1 Worden hier geuplaud.
 
 ## Hoe te gebruiken?
