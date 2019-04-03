@@ -1,6 +1,6 @@
 # Applicatie en media ontwikkelaar Leerjaar 1
 
-alle opdrachten van Novacollege Ao1 Word hier geuplaud.
+alle opdrachten van Novacollege Ao1 Worden hier geuplaud.
 
 ## Hoe te gebruiken?
 
