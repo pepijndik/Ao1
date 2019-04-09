@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: black;
+    }
+
+    .header img{
+    height: 100%;
+    }
+
+.header { 
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+    opacity: 0.9;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8b0000;
+}
+          
+li {
+    float: left;
+}
+          
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+          
+li a:hover {
+    background-color: #111;
+}
+.logoutnav{
+    float: right !important;
+}
+.logoutnav :hover{
+    background-color: red;
+}
+.content {
+    height: auto;
+    padding: 3%;
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url("../images/PIZZAOVEN.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.content img{
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.column1 {
+    float: left;
+    padding: 1px;
+    margin: 5px;
+    margin-left: 20px;
+    height: auto;
+    width: 47%;
+    background-color: #6eaa5e;
+    opacity: 0.9;
+}
+.column2 {
+    float: left;
+    padding: 1px;
+    margin: 5px;
+    margin-left: 20px;
+    height: auto;
+    width: 47%;
+    background-color: #6eaa5e;
+    opacity: 0.9;
+}
+table th{
+    display: block;
+    background-color: #8b0000;
+    color: white;
+    height: 8%;
+}
+table td{
+    text-align: left;
+    display: block;
+}
+.textbox{
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #8b0000;
+    color: white;
+  }
