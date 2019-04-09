@@ -14,7 +14,16 @@ https://github.com/pepijndik/Ao1
 Klik op Clone of download om alles te downloaden.
 Je kunt ook lossen opdrachten downloaden.
 ```
+##Hoe uplaud je juist een bestand?
 
+```bash
+wanneer je geen toegang hebt om te uplauden :
+1. Mail naar info@pdik.nl je Opdracht
+
+Met toegang:
+1. Uplaud je file en geef het bij elke commit een juiste beschrijving. 
+Zoals, Hoofstuk.OpdrachtNaam.Jouw naam
+```
 ##  Verschillende Vakken
 
 ```bash
