@@ -25,7 +25,7 @@ Je kunt ook lossen opdrachten downloaden.
 ```
 
 ## Made possible by:
-@pdik,  @samir, @jay
+@pdik,  @samir, @jay, @Jody
 
 ### altijd up-to-date houden!
 Download altijd de nieuwste versie
