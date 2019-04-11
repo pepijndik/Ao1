@@ -1,7 +1,34 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Opgaven 1 Pepijn dik</title>
     </head>
-    
+    <body>
+        
+       <center> <p>Pepijn Dik</p>
+        <form name="amstelhotel" method="POST" action="toets.php"> <br>
+            <p>Welkom bij het amstelhotel, Hoeveel nachten wilt u reseveren?</p> <br>
+            <select name="aNacht">
+                <option value="1">1 nacht</option>
+                <option value="2">2 nachten</option>
+                <option value="3">3 nachten</option>
+                <option value="4">4 nachten</option>
+            </select><br><br>
+            <p>Welke Kamer wilt u reseveren?</p>
+            <select name="tKamer">
+                <option value="622">Standaard Room - &#8364 622</option>
+                <option value="745">Presidential Room  &#8364 745</option>
+                <option value="1136">Suite  &#8364 1.136</option>
+            </select><br><br>
+            Voor hoeveel personen wilt u reseveren?<br>
+            <input type="text" name="persoon" value="1"> <br><br>
+            Extra ontbijt Per persoon-  &#8364 55 
+            <select name="ontbijt">
+                <option value="55">Ja</option>
+                <option value="0">nee</option>
+            </select><br><br>
+            <input type="submit" name="submit" value="Bereken je boeking totaal prijs ">
+        </form>
+        <h3>Copy Right Pepijn dik</h3>
+    </center>
+    </body>
 </html>
