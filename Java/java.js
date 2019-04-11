@@ -1,1 +1,4 @@
-//Java voor beginners.
+/*
+Java voor beginners
+Start met Web development.
+*/
