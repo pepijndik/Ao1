@@ -35,7 +35,7 @@ Aantal personen: <select name="personen">
 <option value="1 Per">1
 </select>
 <br/>
- <br/> 
+<br/> 
 
  <!--stuurt de berkening op naar php bestand -->
 <input type="submit" value="bereken totaalprijs">
