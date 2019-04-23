@@ -1,0 +1,4 @@
+1.1 
+Select Naam From werknemers
+
+1.2 
