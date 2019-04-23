@@ -2,3 +2,22 @@
 Select Naam From werknemers
 
 1.2 
+Select Distinct  Naam From werknemers
+
+1.3
+Select Distinct Woonplaats,postcode From werknemers
+
+1.4 
+Select Salaris From werknemers
+
+1.5 
+Select Salaris From werknemers
+
+1.6 
+Select DATUM_IN_D From werknemers
+
+1.7 
+SELECT NAAM, SALARIS PER_MAAND, SALARIS * 3 / 13 WEEKSAL
+FROM WERKNEMERS
+
+1.8
