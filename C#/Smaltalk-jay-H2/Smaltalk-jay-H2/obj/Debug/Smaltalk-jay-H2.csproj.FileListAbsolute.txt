@@ -1,0 +1,10 @@
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\bin\Debug\Smaltalk-jay-H2.exe.config
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\bin\Debug\Smaltalk-jay-H2.exe
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\bin\Debug\Smaltalk-jay-H2.pdb
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\obj\Debug\Smaltalk-jay-H2.csprojAssemblyReference.cache
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\obj\Debug\Smaltalk_jay_H2.Smalltalk.resources
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\obj\Debug\Smaltalk_jay_H2.Properties.Resources.resources
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\obj\Debug\Smaltalk-jay-H2.csproj.GenerateResource.cache
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\obj\Debug\Smaltalk-jay-H2.csproj.CoreCompileInputs.cache
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\obj\Debug\Smaltalk-jay-H2.exe
+C:\Users\JBhowmick\Documents\College niveau 3-4\C#\H2\Smaltalk-jay-H2\Smaltalk-jay-H2\obj\Debug\Smaltalk-jay-H2.pdb
