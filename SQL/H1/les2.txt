@@ -21,6 +21,9 @@ SELECT naam From WERKNEMERS WHERE woonplaats !="ROTTERDAM" OR woonplaats !="UTRE
 SELECT naam From WERKNEMERS WHERE NOT (salaris >=2500 OR salaris <=3500)
 
 1.30
+SELECT naam From WERKNEMERS WHERE NOT (Woonplaats="MAASTRICHT" OR Woonplaats="UTRECHT" and chef=40 OR chef=99)
+
+1.31
 
 t/m1.52 
 
