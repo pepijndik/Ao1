@@ -1,0 +1,81 @@
+1.1 
+Select Naam From werknemers
+
+1.2 
+Select Distinct  Naam From werknemers
+
+1.3
+Select Distinct Woonplaats,postcode From werknemers
+
+1.4 
+Select Salaris From werknemers
+
+1.5 
+Select Salaris From werknemers
+
+1.6 
+Select DATUM_IN_D From werknemers
+
+1.7 
+SELECT NAAM, SALARIS PER_MAAND, SALARIS * 3 / 13 WEEKSAL
+FROM WERKNEMERS
+
+1.8
+Select NAAM, SALARIS *1.02 NWSAL.
+
+1.9
+
+SELECT NAAM,Telefoon From WERKNEMERS WHERE Woonplaats='AMSTERDAM'
+
+1.10
+
+SELECT NAAM,ADRES,Woonplaats FROM WERKNEMERS WHERE SALARIS<=2600
+1.11
+
+SELECT NAAM  From werknemers WHERE naam >'Jansen'
+
+1.12
+SELECT Woonplaats From WERKNEMERS WHERE Chef !=40
+
+1.13
+
+SELECT NAAM,SALARIS From WERKNEMERS WHERE Woonplaats='MAASTRICHT'
+
+1.14
+SELECT NAAM,ADRES From werknemers WHERE DATUM_IN_D > '1988-1-1'
+
+1.15	De namen en 10% van het salaris (onder de kolomkop SAL_DEEL) van alle 
+werknemers die niet in ROTTERDAM wonen. 
+SELECT naam, Woonplaats, Salaris * 1.10 SAL_DEEL FROM werknemers
+WHERE Woonplaats != "ROTTERDAM"
+
+1.16	Alle woonplaatsen (zonder dubbelen) van werknemers die voor 31 december 1987 
+in dienst zijn gekomen. 
+SELECT Woonplaats, Datum_in_d, COUNT(*) as CNT FROM werknemers GROUP BY 
+Woonplaats, Datum_in_d ORDER BY `CNT` ASC
+
+1.17	Alle namen en telefoonnummers van werknemers met een postcode boven 3088. 
+SELECT Naam, Telefoon, Postcode FROM werknemers WHERE Postcode >= 3088
+
+1.18	Alle namen van werknemers die niet meer dan 3500 Euro verdienen.
+SELECT Naam, Salaris FROM werknemers WHERE Salaris <= 3500
+
+1.19	 De namen van alle werknemers die in UTRECHT wonen en een salaris hebben van 
+meer dan 3000 Euro. 
+		SELECT naam, Woonplaats, Salaris FROM werknemers WHERE woonplaats = "UTRECHT"
+AND Salaris >= 3000
+
+1.20	 	De namen van alle werknemers met een postcode tussen
+(inclusief de grens waarden) 3050 en 3100. 
+SELECT naam, Woonplaats, Postcode FROM werknemers WHERE Postcode >= 3050 
+AND Postcode <= 3100
+
+1.21	De namen van alle werknemers met een salaris beneden de 2500 Euro of een salaris 
+boven de 4000 Euro. 
+SELECT naam, Woonplaats, Salaris FROM werknemers
+WHERE Salaris <= 2500 OR Salaris >= 4000
+
+1.22	De namen van alle werknemers met een salaris tussen de 2500 en 4000 Euro. 
+SELECT naam, Woonplaats, Salaris FROM werknemers WHERE Salaris >= 2500
+AND Salaris <= 4000
+

@@ -1,0 +1,27 @@
+1.23
+SELECT naam,woonplaats FROM werknemers
+WHERE Woonplaats = "ROTTERDAM" and postcode = "3088 JP" OR "3085 HG"
+
+1.24
+SELECT naam From WERKNEMERS WHERE Chef ="99" OR "20" and salaris <= 2500 OR Salaris >= 4000
+
+1.25
+SELECT Code,naam FROM WERKNEMERS WHERE CODE!="40" OR salaris >= 3000 OR Salaris <= 4000
+
+1.26
+SELECT naam,woonplaats,Datum_in_d From WERKNEMERS WHERE Datum_in_d >="1987-01-01" OR Datum_in_d <="1988-12-31" OR woonplaats ="amsterdam"
+
+1.27
+SELECT naam From WERKNEMERS WHERE woonplaats ="UTRECHT" OR Salaris >=2100 OR Salaris <=3000
+
+1.28
+SELECT naam From WERKNEMERS WHERE woonplaats !="ROTTERDAM" OR woonplaats !="UTRECHT"  AND chef !=99 AND Salaris >=2000 OR Salaris <=3000
+
+1.29
+SELECT naam From WERKNEMERS WHERE NOT (salaris >=2500 OR salaris <=3500)
+
+1.30
+
+t/m1.52 
+
+
