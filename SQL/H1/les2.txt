@@ -24,7 +24,28 @@ SELECT naam From WERKNEMERS WHERE NOT (salaris >=2500 OR salaris <=3500)
 SELECT naam From WERKNEMERS WHERE NOT (Woonplaats="MAASTRICHT" OR Woonplaats="UTRECHT" and chef=40 OR chef=99)
 
 1.31
+SELECT naam From WERKNEMERS WHERE NOT (chef=99 or chef=20 and salaris <= 2000 or salaris >=4000)
 
+1.32 
+SELECT naam FROM WERKNEMERS WHERE not (Datum_in_d="1988")
+
+1.33
+SELECT naam FROM WERKNEMERS WHERE Datum_in_d BETWEEN 1985-01-01 and 1986-12-31
+
+1.34
+SELECT naam FROM WERKNEMERS WHERE salaris BETWEEN 46 and 3499
+
+1.35
+SELECT naam FROM WERKNEMERS WHERE salaris NOT BETWEEN 4001 and 4999 OR Woonplaats="UTRECHT"
+
+1.36
+SELECT naam FROM WERKNEMERS WHERE chef NOT in (99,40,30)
+
+1.37
+SELECT naam FROM WERKNEMERS WHERE code in (10,12,60) and salaris BETWEEN 3501 and 4999
+
+1.38
+SELECT naam FROM WERKNEMERS WHERE woonplaats not in(UTRECHT,MAASTRICHT) and chef not in(99,40)
 t/m1.52 
 
 
