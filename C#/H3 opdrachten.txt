@@ -1,0 +1,7 @@
+opdracht
+
+regel 13.  ushort
+regel 14. Byte
+regel 15. decimal c = 5.66m;
+de 'm' betekent specifiek wordt geconverteerd naar een decimaal.
+
