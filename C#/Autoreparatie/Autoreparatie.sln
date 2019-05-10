@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autoreparatie", "Autoreparatie\Autoreparatie.csproj", "{19DC2BFA-C407-4EC3-A044-148089BE9ED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19DC2BFA-C407-4EC3-A044-148089BE9ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DC2BFA-C407-4EC3-A044-148089BE9ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DC2BFA-C407-4EC3-A044-148089BE9ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DC2BFA-C407-4EC3-A044-148089BE9ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A50B3F89-43A5-4F0A-B5C4-56796B8E32A6}
+	EndGlobalSection
+EndGlobal
