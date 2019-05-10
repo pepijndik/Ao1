@@ -1,6 +1,6 @@
 <?php
 
-/Afschrijvingskosten per jaar = aanschafwaarde/verwachte levensduur in jaren./
+//Afschrijvingskosten per jaar = aanschafwaarde/verwachte levensduur in jaren./
 $aanschaf = $_POST["aanschafwaarde"];
 $levensduur = $_POST["levensduur"];
 $afschrijv = som($levensduur,$aanschaf);
