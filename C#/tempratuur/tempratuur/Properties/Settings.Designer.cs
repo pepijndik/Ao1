@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Temperatuur.Properties
+namespace tempratuur.Properties
 {
 
 

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{21D92BF6-D491-4F3E-9E40-2AAA6C0AF92E}</ProjectGuid>
+    <ProjectGuid>{A8FA7068-409D-4F5D-86BD-7ED280478CF9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Temperatuur</RootNamespace>
-    <AssemblyName>Temperatuur</AssemblyName>
+    <RootNamespace>tempratuur</RootNamespace>
+    <AssemblyName>tempratuur</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

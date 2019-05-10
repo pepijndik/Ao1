@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Temperatuur
+namespace tempratuur
 {
     public partial class Form1 : Form
     {
@@ -17,9 +17,13 @@ namespace Temperatuur
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bntreken_Click(object sender, EventArgs e)
         {
-
+            int Ctemp = int.Parse(temp.Text);
+            int TFahrenheit = (9 * Ctemp / 5) + 32;
+            int Tklevin = Ctemp + 273;
+            fahren.Text = TFahrenheit.ToString();
+            klevin.Text = Tklevin.ToString();
         }
     }
 }
