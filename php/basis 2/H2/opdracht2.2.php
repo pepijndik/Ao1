@@ -1,0 +1,4 @@
+<?php
+$lijst = array("A");
+
+?>
