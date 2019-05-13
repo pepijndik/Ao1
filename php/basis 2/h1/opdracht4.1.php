@@ -1,8 +1,6 @@
 <?php
-bereken(120);
-/*
-Function
-*/
+bereken(530);
+
 function bereken($sec){
     $min = floor($sec / 60);
     $restseconde = $sec - ($min*60);
