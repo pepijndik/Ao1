@@ -46,6 +46,35 @@ SELECT naam FROM WERKNEMERS WHERE code in (10,12,60) and salaris BETWEEN 3501 an
 
 1.38
 SELECT naam FROM WERKNEMERS WHERE woonplaats not in(UTRECHT,MAASTRICHT) and chef not in(99,40)
+
+1.39
+SELECT naam FROM WERKNEMERS WHERE salaris > 4000 and woonplaats in ("ROTTERDAM,UTRECHT,MAASTRICHT")
+1.40
+SELECT naam FROM werknemers WHERE Woonplaats NOT in("amsterdam","UTRECHT")
+1.41
+SELECT naam FROM werknemers WHERE naam LIKE 'B%'
+1.42
+SELECT naam FROM werknemers WHERE naam LIKE '_____e%'
+1.43
+SELECT naam FROM WERKNEMERS WHERE naam NOT LIKE '%E'
+1.44
+SELECT naam FROM werknemers WHERE naam LIKE '____'
+1.45
+SELECT woonplaats FROM werknemers WHERE woonplaats NOT LIKE '%DAM'
+1.46
+SELECT naam FROM werknemers WHERE Adres LIKE '%laan%'
+1.47
+SELECT naam FROM WERKNEMERS WHERE postcode like'30%'
+1.48
+SELECT naam FROM WERKNEMERS WHERE Voorvoegsel IS NULL
+1.49
+SELECT naam FROM werknemers WHERE Chef is not Null
+1.50
+SELECT naam From WERKNEMERS WHERE Telefoon IS NULL
+1.51
+SELECT naam From WERKNEMERS salaris or is NULL
+1.52
+SELECT naam FROM WERKNEMERS WHERE salaris is Null and WHERE chef is not Null
 t/m1.52 
 
 
