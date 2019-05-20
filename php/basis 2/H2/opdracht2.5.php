@@ -1,7 +1,10 @@
 <?php
 $random = array();
 for($i = 0; $i <= 100; $i++){
-    $random[$i] = rand(1,3)*2;   
+    $getal = rand(1,6) * 2;
+    
+    array_push($random,$getal);
+   
 }
 echo $random[1];
 ?>
