@@ -1,9 +1,17 @@
 <?php
-$random = array();
-for($i = 0; $i <= 50; $i++){
-
-    array_push($random,$getal);
-   
+$zes =0;
+for($i=1;$i<=100;$i++)
+{
+    
+    $num[$i] = rand(1,3) * 2;
+    echo "$num[$i] <br/>"; 
+    if($num[$i] == 6)
+    {
+        
+        $zes ++;
+    
+    }
 }
-echo $random[1];
+
+echo("aantal" .$zes);
 ?>
