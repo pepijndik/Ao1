@@ -10,5 +10,5 @@ for($i = 0; $i <= 100; $i++){
     }
 }
 
-echo("aantal keer 6" .$zes);
+echo("aantal keer zes<br>" .$zes);
 ?>
