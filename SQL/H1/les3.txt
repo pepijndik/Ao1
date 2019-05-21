@@ -3,3 +3,4 @@
 SELECT naam FROM WERKNEMERS ORDER BY Code
 
 1.54
+SELECT  DISTINCT woonplaats from WERKNEMERS ORDER BY woonplaats
