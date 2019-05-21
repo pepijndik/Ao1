@@ -1,0 +1,4 @@
+Hoofdstuk 2 SQL
+
+2.1
+FROM WERKNEMERS 
