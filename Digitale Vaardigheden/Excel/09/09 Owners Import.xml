@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Owners.xsd" generated="2003-08-25T17:04:28">
+<_x0034_9Owners>
+<ID>1</ID>
+<Last_x0020_Name>Harmsen</Last_x0020_Name>
+<First_x0020_Name>Emma</First_x0020_Name>
+<Address>12 W. 89th</Address>
+<City>Berg</City>
+<State>OK</State>
+<Zip>73160</Zip>
+<Phone>555-1894</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>2</ID>
+<Last_x0020_Name>Vanderhoorn</Last_x0020_Name>
+<First_x0020_Name>Esme</First_x0020_Name>
+<Address>416 Hoover</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73101</Zip>
+<Phone>555-0125</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>3</ID>
+<Last_x0020_Name>Van Vossen</Last_x0020_Name>
+<First_x0020_Name>Esme</First_x0020_Name>
+<Address>9876 Wilshire Ave.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73140</Zip>
+<Phone>555-0909</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>4</ID>
+<Last_x0020_Name>Krommenhoek</Last_x0020_Name>
+<First_x0020_Name>Elli</First_x0020_Name>
+<Address>9490 Main, Apt. B</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73134</Zip>
+<Phone>555-7878</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>5</ID>
+<Last_x0020_Name>Kornet</Last_x0020_Name>
+<First_x0020_Name>Hakan</First_x0020_Name>
+<Address>14559 Senator Way</Address>
+<City>Midwest City</City>
+<State>OK</State>
+<Zip>73156</Zip>
+<Phone>555-9977</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>6</ID>
+<Last_x0020_Name>Van Lier</Last_x0020_Name>
+<First_x0020_Name>Edmee</First_x0020_Name>
+<Address>1901 Cloud St.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73101</Zip>
+<Phone>555-1854</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>7</ID>
+<Last_x0020_Name>Arink</Last_x0020_Name>
+<First_x0020_Name>Elli</First_x0020_Name>
+<Address>1032 Pine Drive</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73194</Zip>
+<Phone>555-3125</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>8</ID>
+<Last_x0020_Name>Echols</Last_x0020_Name>
+<First_x0020_Name>Laszlo</First_x0020_Name>
+<Address>1121 Meridian Ave.</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73120</Zip>
+<Phone>555-6497</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>9</ID>
+<Last_x0020_Name>Edwards</Last_x0020_Name>
+<First_x0020_Name>Prisilla</First_x0020_Name>
+<Address>2141 Oak Street</Address>
+<City>Berg</City>
+<State>OK</State>
+<Zip>73151</Zip>
+<Phone>555-1594</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>10</ID>
+<Last_x0020_Name>Van Vlier</Last_x0020_Name>
+<First_x0020_Name>Marit</First_x0020_Name>
+<Address>4984 Wander Wood Lane</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73126</Zip>
+<Phone>555-0021</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>11</ID>
+<Last_x0020_Name>Plant</Last_x0020_Name>
+<First_x0020_Name>Dena</First_x0020_Name>
+<Address>987 Aspen Way</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73143</Zip>
+<Phone>555-1849</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>12</ID>
+<Last_x0020_Name>Vanderschoot</Last_x0020_Name>
+<First_x0020_Name>Monica</First_x0020_Name>
+<Address>8123 Maple Ave.</Address>
+<City>Berg</City>
+<State>OK</State>
+<Zip>73150</Zip>
+<Phone>555-1487</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>13</ID>
+<Last_x0020_Name>Steen</Last_x0020_Name>
+<First_x0020_Name>Elli</First_x0020_Name>
+<Address>225 Alan Street</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73194</Zip>
+<Phone>555-2415</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>14</ID>
+<Last_x0020_Name>Visser</Last_x0020_Name>
+<First_x0020_Name>Elsje</First_x0020_Name>
+<Address>2141 E 21st Street</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73194</Zip>
+<Phone>555-0214</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>15</ID>
+<Last_x0020_Name>Quint</Last_x0020_Name>
+<First_x0020_Name>Edmee</First_x0020_Name>
+<Address>8012 Fen Court</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73101</Zip>
+<Phone>555-1948</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>16</ID>
+<Last_x0020_Name>Van Veenen</Last_x0020_Name>
+<First_x0020_Name>Wander</First_x0020_Name>
+<Address>6467 Riverside Drive</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73120</Zip>
+<Phone>555-1253</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>17</ID>
+<Last_x0020_Name>Van Nuil</Last_x0020_Name>
+<First_x0020_Name>Menna</First_x0020_Name>
+<Address>3847 Shipshore Drive</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73132</Zip>
+<Phone>555-9664</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>18</ID>
+<Last_x0020_Name>Wassenaar</Last_x0020_Name>
+<First_x0020_Name>Pleun</First_x0020_Name>
+<Address>8794 Dean Road</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73140</Zip>
+<Phone>555-1277</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>19</ID>
+<Last_x0020_Name>Vanderschans</Last_x0020_Name>
+<First_x0020_Name>Rodney</First_x0020_Name>
+<Address>2184 Keystone Ave.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73132</Zip>
+<Phone>555-1818</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>20</ID>
+<Last_x0020_Name>Peyton</Last_x0020_Name>
+<First_x0020_Name>Omer</First_x0020_Name>
+<Address>4080 Music Blvd.</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73120</Zip>
+<Phone>555-0212</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>21</ID>
+<Last_x0020_Name>Visser</Last_x0020_Name>
+<First_x0020_Name>Elsje</First_x0020_Name>
+<Address>2001 Lionway</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73199</Zip>
+<Phone>555-1864</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>22</ID>
+<Last_x0020_Name>Russell</Last_x0020_Name>
+<First_x0020_Name>Elsje</First_x0020_Name>
+<Address>394 E. Elm</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73199</Zip>
+<Phone>555-1504</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>23</ID>
+<Last_x0020_Name>Russell</Last_x0020_Name>
+<First_x0020_Name>Edmee</First_x0020_Name>
+<Address>1325 Ritchey Dr.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73139</Zip>
+<Phone>555-2141</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>24</ID>
+<Last_x0020_Name>Steen</Last_x0020_Name>
+<First_x0020_Name>Femke</First_x0020_Name>
+<Address>7556 Hilltop Way</Address>
+<City>Midwest City</City>
+<State>OK</State>
+<Zip>73154</Zip>
+<Phone>555-3678</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>25</ID>
+<Last_x0020_Name>Glissen</Last_x0020_Name>
+<First_x0020_Name>Johanna</First_x0020_Name>
+<Address>8745 W. 116th Street</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73120</Zip>
+<Phone>555-1897</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>26</ID>
+<Last_x0020_Name>Glissen</Last_x0020_Name>
+<First_x0020_Name>Guyon</First_x0020_Name>
+<Address>5648 Hydcort</Address>
+<City>Berg</City>
+<State>OK</State>
+<Zip>73150</Zip>
+<Phone>555-8819</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>27</ID>
+<Last_x0020_Name>Regter</Last_x0020_Name>
+<First_x0020_Name>Marit</First_x0020_Name>
+<Address>218 Dean Rd.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73136</Zip>
+<Phone>555-1496</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>28</ID>
+<Last_x0020_Name>Berg</Last_x0020_Name>
+<First_x0020_Name>Esme</First_x0020_Name>
+<Address>12 Aspen Way</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73143</Zip>
+<Phone>555-4751</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>29</ID>
+<Last_x0020_Name>Sventeck</Last_x0020_Name>
+<First_x0020_Name>Robert</First_x0020_Name>
+<Address>808 Toad Hill</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73159</Zip>
+<Phone>555-0351</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>30</ID>
+<Last_x0020_Name>Sweares</Last_x0020_Name>
+<First_x0020_Name>Ilene</First_x0020_Name>
+<Address>5784 N. Central</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73168</Zip>
+<Phone>555-6479</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>31</ID>
+<Last_x0020_Name>Sweeney</Last_x0020_Name>
+<First_x0020_Name>Dyan</First_x0020_Name>
+<Address>6311 Douglas Road</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73120</Zip>
+<Phone>555-9052</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>32</ID>
+<Last_x0020_Name>Teasley</Last_x0020_Name>
+<First_x0020_Name>Peter</First_x0020_Name>
+<Address>4125 Fairlinks Ave.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73131</Zip>
+<Phone>555-1212</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>33</ID>
+<Last_x0020_Name>Thompson</Last_x0020_Name>
+<First_x0020_Name>Doug</First_x0020_Name>
+<Address>304 W. Chestnut</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73189</Zip>
+<Phone>555-1843</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>34</ID>
+<Last_x0020_Name>Thorton</Last_x0020_Name>
+<First_x0020_Name>Vanessa</First_x0020_Name>
+<Address>808 Toad Hill</Address>
+<City>Berg</City>
+<State>OK</State>
+<Zip>73150</Zip>
+<Phone>555-1021</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>35</ID>
+<Last_x0020_Name>Turner</Last_x0020_Name>
+<First_x0020_Name>Teresa</First_x0020_Name>
+<Address>715 Armadillo Ct.</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73103</Zip>
+<Phone>555-3151</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>36</ID>
+<Last_x0020_Name>Beukema</Last_x0020_Name>
+<First_x0020_Name>Monica</First_x0020_Name>
+<Address>8453 Brown Ave.</Address>
+<City>Midwest City</City>
+<State>OK</State>
+<Zip>73154</Zip>
+<Phone>555-9881</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>37</ID>
+<Last_x0020_Name>Regter</Last_x0020_Name>
+<First_x0020_Name>Sara</First_x0020_Name>
+<Address>3281 Fen Court</Address>
+<City>Berg</City>
+<State>OK</State>
+<Zip>73150</Zip>
+<Phone>555-1648</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>38</ID>
+<Last_x0020_Name>Washington</Last_x0020_Name>
+<First_x0020_Name>Rodney</First_x0020_Name>
+<Address>11794 Southland Ave.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73132</Zip>
+<Phone>555-9812</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>39</ID>
+<Last_x0020_Name>Wasserman</Last_x0020_Name>
+<First_x0020_Name>Jay</First_x0020_Name>
+<Address>90 East Main</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73140</Zip>
+<Phone>555-1837</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>40</ID>
+<Last_x0020_Name>Waters</Last_x0020_Name>
+<First_x0020_Name>Alyce</First_x0020_Name>
+<Address>808 Hill Ct.</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73159</Zip>
+<Phone>555-6614</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>41</ID>
+<Last_x0020_Name>Waters</Last_x0020_Name>
+<First_x0020_Name>Anna</First_x0020_Name>
+<Address>714 S. Chestnut</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73159</Zip>
+<Phone>555-5121</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>42</ID>
+<Last_x0020_Name>Whitaker</Last_x0020_Name>
+<First_x0020_Name>Omer</First_x0020_Name>
+<Address>11684 Bay Colony Drive</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73134</Zip>
+<Phone>555-1894</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>43</ID>
+<Last_x0020_Name>Whitaker</Last_x0020_Name>
+<First_x0020_Name>Tinka</First_x0020_Name>
+<Address>14903 Senator Way</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73126</Zip>
+<Phone>555-4333</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>44</ID>
+<Last_x0020_Name>Whitmer</Last_x0020_Name>
+<First_x0020_Name>Pat</First_x0020_Name>
+<Address>2341 May Ave.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73130</Zip>
+<Phone>555-2141</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>45</ID>
+<Last_x0020_Name>Mutlu</Last_x0020_Name>
+<First_x0020_Name>Johanna</First_x0020_Name>
+<Address>2414 Hidden Valley Rd.</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73121</Zip>
+<Phone>555-8555</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>46</ID>
+<Last_x0020_Name>Willard</Last_x0020_Name>
+<First_x0020_Name>Mima</First_x0020_Name>
+<Address>2004 North View</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73159</Zip>
+<Phone>555-2134</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>47</ID>
+<Last_x0020_Name>Peterson</Last_x0020_Name>
+<First_x0020_Name>Opal</First_x0020_Name>
+<Address>9115 N. 123rd Street</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73168</Zip>
+<Phone>555-9868</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>48</ID>
+<Last_x0020_Name>Peterson</Last_x0020_Name>
+<First_x0020_Name>Jesse</First_x0020_Name>
+<Address>8947 Miland Ave.</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73168</Zip>
+<Phone>555-3344</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>49</ID>
+<Last_x0020_Name>Woo</Last_x0020_Name>
+<First_x0020_Name>Daniel</First_x0020_Name>
+<Address>30090 Jeremiah Dr.</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73193</Zip>
+<Phone>555-8956</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>50</ID>
+<Last_x0020_Name>Woo</Last_x0020_Name>
+<First_x0020_Name>Anna</First_x0020_Name>
+<Address>7998 Maple Ave.</Address>
+<City>Edmond</City>
+<State>OK</State>
+<Zip>73115</Zip>
+<Phone>555-1515</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>51</ID>
+<Last_x0020_Name>Woo</Last_x0020_Name>
+<First_x0020_Name>Lily</First_x0020_Name>
+<Address>807 Vale Drive</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73101</Zip>
+<Phone>555-1524</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>52</ID>
+<Last_x0020_Name>Claasen</Last_x0020_Name>
+<First_x0020_Name>She Wu</First_x0020_Name>
+<Address>6497 River Run</Address>
+<City>Dell City</City>
+<State>OK</State>
+<Zip>73120</Zip>
+<Phone>555-0313</Phone>
+</_x0034_9Owners>
+<_x0034_9Owners>
+<ID>53</ID>
+<Last_x0020_Name>Davinger</Last_x0020_Name>
+<First_x0020_Name>Martin</First_x0020_Name>
+<Address>8815 NW 108</Address>
+<City>Oklahoma City</City>
+<State>OK</State>
+<Zip>73124</Zip>
+<Phone>555-1967</Phone>
+</_x0034_9Owners>
+</dataroot>
