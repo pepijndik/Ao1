@@ -19,6 +19,7 @@ namespace opdracht5._4
 
         private void btnSorteer_Click(object sender, EventArgs e)
         {
+           
 
         }
     }
