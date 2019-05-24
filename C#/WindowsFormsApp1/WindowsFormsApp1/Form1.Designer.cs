@@ -53,6 +53,7 @@
             this.straal.Name = "straal";
             this.straal.Size = new System.Drawing.Size(100, 22);
             this.straal.TabIndex = 1;
+            this.straal.TextChanged += new System.EventHandler(this.straal_TextChanged);
             // 
             // label1
             // 
