@@ -1,4 +1,11 @@
 Hoofdstuk 2 SQL
+count(tellen + -)
+avg (gemiddelde)
+max(grootste)
+min(kleinste)
 
+GROUP BY (in een groe)
 2.1
-SELECT naam FROM werknemers
+SELECT woonplaats, AVG(salaris) FROM werknemers GROUP BY woonplaats
+2.2
+SELECT salaris, max(salaris) 
