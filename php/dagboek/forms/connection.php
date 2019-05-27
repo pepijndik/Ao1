@@ -1,7 +1,7 @@
 <?php   
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "nsdmv5uxfyw";
 $id= $_SESSION['id'];
 try {
     $conn = new PDO("mysql:host=$servername;dbname=dagboek", $username, $password); /* making a new connection witht the database*/

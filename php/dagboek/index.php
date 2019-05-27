@@ -15,6 +15,7 @@
                         <li><a href="register.php">Register</a></li>
                 </ul>
             </div>
+            <img src="images/computers4u.png" alt="logo" style="width:450px;height:125px;">
                 <form action='forms/loginForm.php' method="POST">
                     <div class=loginbox>
                         <h1><legend>Login</legend></h1>
