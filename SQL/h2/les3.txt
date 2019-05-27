@@ -4,8 +4,12 @@ avg (gemiddelde)
 max(grootste)
 min(kleinste)
 
-GROUP BY (in een groe)
+GROUP BY (in een groep)
 2.1
 SELECT woonplaats, AVG(salaris) FROM werknemers GROUP BY woonplaats
 2.2
-SELECT salaris, max(salaris) 
+SELECT naam max(salaris) FROM werknemers where chef < 99 GROUP BY chef
+2.3
+
+2.4
+SELECT chef, count(*) FROM werknemers GROUP BY code HAVING COUNT(*) >  
