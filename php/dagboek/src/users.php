@@ -17,7 +17,7 @@ class User
         {
             $servername = "localhost";
             $username = "root";
-            $password = "nsdmv5uxfyw";
+            $password = "";
 
         try 
             {   
