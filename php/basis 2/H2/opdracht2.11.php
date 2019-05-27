@@ -1,26 +1,30 @@
 <?php
-$mogelijk = array("...","-x-");
+
+for ($x=0; $x<10; $x++){
+    for($y=0; $y < 10; $y ++){
+        $vlak[$x][$y] = "...";
+    }
 
 
-for ($x = 0; $x < 2; $x++){
-    $random = rand(0,1);
+}
+$random_aantal = rand(0,45);
+
+for ($t=1; $t<=$random_aantal; $t++){
+    $randomX = rand(0,10);
+    $randomY = rand(0,10);
     
-  }
-echo "<table border='1'>";
-for ($x = 0; $x < 10; $x++){
-  
-     
-       		echo "<tr>";
-            echo "<td>".  $mogelijk[$random]. "</td>";
+    $vlak[$randomX][$randomY] = "..x..";
+    
+    }
 
-           for ($y = 0; $y < 10; $y++){
-            echo "<td>". $mogelijk[$random]. "</td>";
-           }
-           
-                    
-                 }
-                 echo "</tr>";
-                 
-                 
-echo "</table>";
+    echo "<table border='1'>";
+    for ($x = 0; $x < 10; $x++){
+                echo "<tr>";
+               for ($y = 0; $y < 10; $y++){
+                echo "<td>".$vlak[$x][$y]."</td>";
+               }
+        echo "</tr>";
+    }
+   echo "</table>";
+       
 ?>
