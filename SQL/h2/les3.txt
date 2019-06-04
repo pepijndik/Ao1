@@ -4,12 +4,278 @@ avg (gemiddelde)
 max(grootste)
 min(kleinste)
 
-GROUP BY (in een groep)
-2.1
-SELECT woonplaats, AVG(salaris) FROM werknemers GROUP BY woonplaats
-2.2
-SELECT naam max(salaris) FROM werknemers where chef < 99 GROUP BY chef
-2.3
+1.53	De namen van werknemers waarvan het salaris (nog) niet bekend is maar die wel
+ een chef hebben. 
+		SELECT naam, Salaris, Chef FROM werknemers
+WHERE Salaris IS NULL OR Chef IS NOT NULL
+1.54	De namen van alle werknemers oplopend geordend naar hun code. 
+SELECT naam, Code FROM werknemers ORDER BY Code ASC
 
-2.4
-SELECT chef, count(*) FROM werknemers GROUP BY code HAVING COUNT(*) >  
+1.55	Alle woonplaatsen slechts eenmaal genoemd, alfabetisch aflopend geordend. 
+SELECT naam, Woonplaats FROM werknemers ORDER BY Woonplaats ASC
+
+1.56	Alle namen van alle werknemers, aflopend geordend naar salaris. 
+SELECT naam, Salaris FROM werknemers ORDER BY Salaris ASC
+
+1.57	Alle namen van alle werknemers, geordend naar datum van indiensttreding. 
+SELECT naam, Datum_in_d FROM werknemers ORDER BY Datum_in_d ASC
+
+1.58	Alle namen van alle werknemers met een salaris tussen 2000 en 4000 Euro, 
+geordend naar woonplaats en per woonplaats naar naam. 
+SELECT naam, Salaris, Woonplaats FROM werknemers WHERE Salaris BETWEEN 2000 AND 4000 ORDER BY Woonplaats,Naam ASC
+  
+Geavanceerde functies voor het opvragen van gegevens
+
+GROUP BY, HAVING, COUNT, AVG, SUM, MAX en MIN 
+
+In veel gevallen zullen we niet alleen geïnteresseerd zijn in informatie in de vorm van rijen uit een tabel, maar willen we ook inzicht krijgen in gegroepeerde gegevens. In SQL hebben we hiervoor de GROUP BY instructie tot onze beschikking. Vaak maken we daarbij bovendien gebruik van de zogenaamde "groep functies". Hiermee kunnen we bijvoorbeeld tellen hoeveel rijen er in een groep zitten of wat het gemiddelde van een numeriek gegeven in een groep is. 
+
+	De GROUP BY instructie zorgt er voor dat bepaalde rijen gegroepeerd worden zodat we berekeningen en selecties kunnen uitvoeren met groepen rijen in plaats van individuele rijen. We zullen ons eerst eens af gaan vragen hoe de GROUP BY instructie nu eigenlijk werkt. 
+
+Omdat de GROUP BY instructie onmiddellijk na de WHERE component wordt uitgevoerd kunnen we ons het volgende voorstellen. 
+
+We zouden van de rijen in de tabel WERKNEMERS een aantal gegroepeerde rijen kunnen maken, bijvoorbeeld per WOONPLAATS. Om dit te bereiken zouden we dus na de WHERE component toe moeten voegen 
+
+GROUP BY WOONPLAATS 
+
+Het gevolg hiervan is dat er als het ware per woonplaats een aantal rijen tot één rij gecombineerd worden. Dit betekent automatisch dat we met een opdracht als 
+
+SELECT NAAM, WOONPLAATS 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS 
+
+niets kunnen beginnen. Immers er wordt gegroepeerd, dus eigenlijk ontstaat er iets als het volgende 
+
+NAAM 	WOONPLAATS
+BUCK, BRASSER, VLIET, NEVE, PAREE, JANSMA 	AMSTERDAM UMBGROVE 	VLISSINGEN 
+LIEVENSE 	LEEUWARDEN 
+MAAS, MERK, WILLEGEN, JOBSE, BOS, MAAS, KONING 	ROTTERDAM GEEL, LOOF 	UTRECHT 
+ZEEUW, VLIET 	EINDHOVEN 
+JONGE 	MAASTRICHT 
+
+Het op het scherm zetten van de woonplaatsen is niet zo'n probleem. Maar wat moet er nu afgedrukt worden bij NAAM? 
+
+	We zullen er dus rekening mee moeten houden dat we bij de GROUP BY optie alleen vragen om die kolommen waar op gegroepeerd wordt of gebruik maken van de zogenaamde groep functies. De groep functies die we in iedere SQL implementatie aan kunnen treffen zijn: 
+
+COUNT 
+AVG 
+SUM 
+MAX 
+MIN 
+
+	We zouden ons bijvoorbeeld af kunnen vragen hoeveel werknemers er in iedere plaats wonen: 
+
+SELECT WOONPLAATS, COUNT(*) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS 
+
+Dit heeft tot gevolg dat er bij het tussenresultaat gekeken zal worden hoeveel rijen er in iedere groep zitten (we geven door het * teken aan dat het aantal rijen geteld moet worden) en dat de uitkomst op het scherm afgedrukt zal worden. Dat geeft dan het volgende resultaat 
+ 
+
+WOONPLAATS 	COUNT(*) 
+AMSTERDAM 	6 
+VLISSINGEN 	1 
+LEEUWARDEN 	1 
+ROTTERDAM 	7 
+UTRECHT 	2 
+EINDHOVEN 	2 
+MAASTRI CHT 	1 
+
+We kunnen COUNT ook gebruiken om alleen het aantal ingevulde waarden per kolom te tellen. We gebruiken dan de kolom naam in plaats van het * teken. 
+
+SELECT WOONPLAATS, COUNT(CHEF) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS 
+
+geeft ons per woonplaats het aantal werknemers met een CHEF. Met andere woorden: ROTTERDAM zal dan door het getal 6 in plaats van 7 worden vergezeld omdat de in ROTTERDAM woonachtige DE KONING geen CHEF heeft en in dit geval dus niet meetelt.
+
+	De functie AVG wordt gebruikt om het gemiddelde (AVERAGE) van een bepaalde groep te berekenen. Zo zouden we het gemiddelde salaris per woonplaats op kunnen vragen door 
+
+SELECT WOONPLAATS, AVG(SALARIS) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS 
+
+AVG berekent het gemiddelde en houdt daarbij rekening met het feit dat niet ingevulde kolommen (NULL waarden) genegeerd moeten worden. Ook is het in sommige RDBMS-en mogelijk om DISTINCT te gebruiken zodat het gemiddelde van alle verschillende waarden berekend wordt. AVG(DISTINCT(GETAL)) bij de waarden 1, 1, 1 en 3 levert dan 2 op in plaats van 1,5.
+
+	De SUM functie totaliseert een numerieke kolom: 
+
+SELECT WOONPLAATS, SUM(SALARIS) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS 	
+
+levert per WOONPLAATS het totaal aan salarissen op. 
+
+	De MAX en de MIN functie berekenen respectievelijk de hoogste en de laagste waarde binnen een groep. 
+
+SELECT WOONPLAATS, MAX(SALARIS) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS 
+
+geeft ons per woonplaats het hoogste salaris, terwijl 
+
+
+			SELECT WOONPLAATS, MIN(SALARIS) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS 
+
+ons het laagste salaris per woonplaats oplevert. 
+
+	Het is ook toegestaan om te groeperen op meerdere kolommen. Als we 
+	bijvoorbeeld een overzicht willen hebben van het aantal werknemers per woonplaats en binnen woonplaats per postcode-gebied kunnen we opvragen 
+ 
+
+SELECT WOONPLAATS, POSTCODE, COUNT(*) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS, POSTCODE
+
+	De GROUP FUNCTIES kunnen ook gebruikt worden zonder het GROUP BY 
+	gedeelte. Dat komt met name van pas als we zo'n functie willen gebruiken voor een hele tabel. We beschouwen dan in feite de gehele tabel als een groep. 
+
+De opdracht 
+
+SELECT COUNT(* ), AVG(SALARIS), SUM(SALARIS), MAX(SALARIS), MIN (SALARIS) 
+FROM WERKNEMERS 
+
+geeft ons een overzicht van achtereenvolgens het aantal rijen, het gemiddelde salaris, het totaalbedrag van alle salarissen, het hoogste salaris en het laagste salaris van alle werknemers in de WERKNEMERS tabel. 
+
+	Aan gegroepeerde rijen kunnen we ook typische 'groepsvoorwaarden' stellen. Zo zouden we bijvoorbeeld het aantal werknemers per woonplaats op kunnen vragen maar daar tegelijkertijd aan toe kunnen voegen dat we in het overzicht alleen die woonplaatsen willen zien die meer dan 5 werknemers hebben. 
+
+Dan moeten we gebruik maken van HAVING. 
+
+SELECT WOONPLAATS, COUNT(*) 
+FROM WERKNEMERS 
+GROUP BY WOONPLAATS HAVING COUNT(*) > 5 
+
+Dat geeft dan het volgende resultaat: 
+ 
+
+WOONPLAATS 	COUNT(*) 
+AMSTERDAM 	6 
+ROTTERDAM 	7 
+
+Het RDBMS zal nog steeds de eerste stappen uit de eerder genoemde opdracht zonder HAVING uitvoeren, maar zal voordat het resultaat op het scherm wordt afgedrukt als het ware nog die groepen uitfilteren die niet aan de, in het HAVING gedeelte gestelde, voorwaarde voldoen. 
+
+	Uiteraard is het toegestaan om in een SELECT opdracht met een GROUP BY voorwaarden te stellen met behulp van een WHERE gedeelte. We moeten ons dan goed realiseren dat het WHERE gedeelte eerder wordt uitgevoerd dan het GROUP BY gedeelte, zodat er groepen gemaakt worden van alleen die rijen die aan de, in het WHERE gedeelte gestelde, voorwaarde voldoen. 
+
+SELECT WOONPLAATS, AVG(SALARIS) 
+FROM WERKNEMERS 
+WHERE SALARIS > 2500 
+GROUP BY WOONPLAATS
+
+geeft ons per woonplaats het gemiddelde salaris van iedereen die meer dan 2500 Euro verdient. 
+
+	Apart aandacht verdient nog de waarde NULL oftewel de niet ingevulde waarde. Bedenk dat er dus ook een groep kan ontstaan van records waarbij in de kolom die we in het GROUP BY gedeelte gebruiken, niets is ingevuld. 
+ 
+
+Opdrachten
+Geef een opdracht in SQL voor het opvragen van de volgende overzichten 
+WERKNEMERS tabel. 
+
+2.1	Per woonplaats het gemiddelde salaris. 
+SELECT Woonplaats, AVG(Salaris) FROM werknemers WHERE Salaris GROUP BY Woonplaats
+2.2	Het hoogste salaris dat per chef door een ondergeschikte verdiend wordt.
+SELECT Naam, Chef, MAX(Salaris) FROM werknemers WHERE Salaris GROUP BY Naam
+2.3	Idem als vraag 2 maar nu tellen alleen de werknemers die minder dan 4000 Euro verdienen mee. 
+SELECT Naam, Salaris FROM werknemers WHERE Salaris <4000 GROUP BY Naam
+2.4	Het aantal werknemers dat onder iedere chef valt, chefs met minder dan twee ondergeschikten moeten niet vermeld worden. 
+SELECT Naam, Chef FROM werknemers WHERE NOT Chef <2 GROUP BY Naam
+
+	Voor het raadplegen van gegevens uit meerdere tabellen hebben we de beschikking over een aantal mogelijkheden. We kennen de SUBQUERY: het gebruiken van meerdere SELECT opdrachten in één opdracht. 
+
+	Naast de SUBQUERY kennen we de al eerder besproken JOIN waarbij we meerdere tabellen in het FROM gedeelte van de SELECT opdracht gebruiken. 
+
+In dit hoofdstuk zullen we zien dat we in veel gevallen zowel een SUBQUERY als een JOIN kunnen gebruiken om een antwoord te vinden op een bepaalde vraag.
+ 
+ 
+
+
+De SUBQUERY 
+subquery	De SUBQUERY is eigenlijk niets anders dan een vraag in een vraag oftewel een subvraag om bepaalde problemen op te lossen. Er is vrijwel geen enkel probleem te bedenken dat we niet ook met de JOIN op zouden kunnen lossen maar in veel gevallen is de SUBQUERY een stuk helderder en bovendien eenvoudiger te formuleren. Wel dienen we er rekening mee te houden dat veel RDBMS systemen beter presteren als we gebruik maken van een JOIN in plaats van een SUBQUERY. 
+
+Stel dat we op zoek zijn naar de namen van alle werknemers die in dezelfde plaats wonen als werknemer BOS. Natuurlijk kunnen we het antwoord hierop in twee stappen verkrijgen: 
+
+SELECT WOONPLAATS 
+FROM WERKNEMERS 
+WHERE NAAM = 'BOS' 
+
+Met als resultaat 
+
+WOONPLAATS 
+
+ROTTERDAM 
+
+en vervolgens 
+
+SELECT NAAM 
+FROM WERKNEMERS 
+WHERE WOONPLAATS = 'ROTTERDAM'
+
+	Met een SUBQUERY is het eigenlijk veel eenvoudiger op te lossen: 
+
+SELECT NAAM 
+FROM WERKNEMERS 
+WHERE WOONPLAATS = 
+(SELECT WOONPLAATS 
+FROM WERKNEMERS 
+WHERE NAAM = 'BOS') 
+
+Als we deze oplossing zien, zien we al vrij snel wat de bedoeling is, namelijk 'Geef de namen van alle werknemers met als woonplaats (de woonplaats van BOS)'. Dit is niet alleen wat sneller te doorzien maar sluit ook meer aan bij de wijze waarop we de vraag geformuleerd hadden. 
+
+Door gebruik te maken van een subvraag kunnen we eigenlijk op vrij eenvoudige wijze vraagstellingen zoals in het voorgaande oplossen.
+
+	Waar we in het voorafgaande aan voorbij zijn gegaan, is het feit dat een SUBQUERY in veel gevallen niet één, maar meerdere waarden oplevert. In het voorgaande voorbeeld kwam dit toevallig goed uit omdat in onze database slechts één werknemer BOS aanwezig is. Dat is bijvoorbeeld zeker niet het geval als we ons afvragen welke werknemers in dezelfde plaats wonen als de werknemers die als chef werknemer 40 hebben. Als we dit proberen op te lossen met: 
+
+SELECT naam
+FROM werknemers 
+WHERE woonplaats = 
+(SELECT woonplaats
+FROM werknemers
+WHERE chef= '40') 
+
+ 
+zal dit tot een foutmelding leiden omdat de SUBQUERY hier meerdere woonplaatsen oplevert en geen enkele waarde uit een rij kan gelijk zijn aan de waarden uit meerdere andere rijen. We gebruiken dan de (al eerder behandelde) IN operator. 
+
+Dus
+
+SELECT naam
+FROM werknemers
+WHERE woonplaats IN 
+(SELECT woonplaats 
+FROM werknemers 
+WHERE chef = '40')
+
+Het is ook mogelijk om meerdere SUBQUERIES aan elkaar te koppelen. De 
+	voorgaande vraag zouden we ook kunnen formuleren als: Welke werknemers wonen in dezelfde plaats als de werknemers die als chef MERK hebben? Dat lossen we op door: 
+
+
+
+SELECT naam
+FROM werknemers 
+WHERE woonplaats IN 
+(SELECT woonplaats
+FROM werknemers
+WHERE chef IN 
+(SELECT code
+FROM werknmers
+WHERE naam = 'MERK')) 
+ 
+
+Opdrachten
+Geef een opdracht in SQL voor het opvragen van de volgende overzichten uit de WERKNEMERS, WERK, PROJECTEN en SCHALEN tabellen. 
+
+2.5	De namen van werknemers die dezelfde chef hebben als werknemer 40. 
+SELECT naam, Code, Chef FROM werknemers WHERE Code IN (SELECT Code FROM werknemers WHERE Code IN (SELECT code FROM werknemers WHERE Chef = 99))
+2.6	De namen van werknemers die aan hetzelfde project werken als werknemer 35. 
+SELECT Naam, Woonplaats FROM werknemers WHERE Woonplaats IN (SELECT Woonplaats FROM projecten WHERE proj_leider IN (SELECT proj_leider FROM projecten WHERE proj_leider =35))
+2.7	De namen van projecten die uitgevoerd worden in dezelfde plaats als de woonplaats van werknemer BOS. 
+SELECT Naam, Woonplaats FROM werknemers WHERE Woonplaats IN (SELECT Woonplaats FROM werknemers WHERE Naam ="BOS")
+2.8	De namen van werknemers die in een andere plaats wonen dan werknemer 99. 
+SELECT Code, Naam, Woonplaats FROM werknemers WHERE NOT Woonplaats IN SELECT Woonplaats FROM werknemers WHERE Code =99)
+2.9	De namen van werknemers die een hoger salaris hebben dan werknemer 12. 
+SELECT Code, Naam, Salaris FROM werknemers WHERE Salaris IN(SELECT Salaris FROM werknemers WHERE Salaris > 2149)
+2.10	De namen van projecten waar werknemer MERK aan werkt. 
+SELECT proj_naam, proj_leider FROM projecten WHERE proj_leider IN (SELECT werknemers.Code FROM werknemers WHERE Naam ="MERK")
+2.11	De woonplaatsen van werknemers die aan hetzelfde project werken als werknemer MERK. 
+SELECT Woonplaats, naam FROM werknemers WHERE woonplaats IN (SELECT projecten.proj_plaats FROM projecten WHERE projecten.proj_plaats = (SELECT Woonplaats FROM werknemers WHERE naam = "MERK"))
+2.12	De namen van alle werknemers die in dezelfde salarisschaal vallen als werknemer BOS. 
+SELECT schaal,werknemers.Naam FROM schalen,werknemers WHERE schaal IN (SELECT schalen.schaal FROM werknemers WHERE schalen.schaal <>"BOS")
