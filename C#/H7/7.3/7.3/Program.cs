@@ -34,8 +34,7 @@ namespace _7._3
                 Console.WriteLine("geef getal");
                 invoer = Console.ReadLine();
                 int.Parse(invoer);
-
-
+                // wanneer 0 program exit
                 if (int.Parse(invoer) == 0)
                 {
                     Console.WriteLine("je hebt op 0 gedrukt, het programma wordt gesloten...");
