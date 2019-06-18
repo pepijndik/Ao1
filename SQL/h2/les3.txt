@@ -172,11 +172,17 @@ Geef een opdracht in SQL voor het opvragen van de volgende overzichten
 WERKNEMERS tabel. 
 
 2.1	Per woonplaats het gemiddelde salaris. 
+
 SELECT Woonplaats, AVG(Salaris) FROM werknemers WHERE Salaris GROUP BY Woonplaats
+
 2.2	Het hoogste salaris dat per chef door een ondergeschikte verdiend wordt.
+
 SELECT Naam, Chef, MAX(Salaris) FROM werknemers WHERE Salaris GROUP BY Naam
+
 2.3	Idem als vraag 2 maar nu tellen alleen de werknemers die minder dan 4000 Euro verdienen mee. 
+
 SELECT Naam, Salaris FROM werknemers WHERE Salaris <4000 GROUP BY Naam
+
 2.4	Het aantal werknemers dat onder iedere chef valt, chefs met minder dan twee ondergeschikten moeten niet vermeld worden. 
 SELECT Naam, Chef FROM werknemers WHERE NOT Chef <2 GROUP BY Naam
 
@@ -265,17 +271,46 @@ Geef een opdracht in SQL voor het opvragen van de volgende overzichten uit de WE
 
 2.5	De namen van werknemers die dezelfde chef hebben als werknemer 40. 
 SELECT naam, Code, Chef FROM werknemers WHERE Code IN (SELECT Code FROM werknemers WHERE Code IN (SELECT code FROM werknemers WHERE Chef = 99))
+
 2.6	De namen van werknemers die aan hetzelfde project werken als werknemer 35. 
 SELECT Naam, Woonplaats FROM werknemers WHERE Woonplaats IN (SELECT Woonplaats FROM projecten WHERE proj_leider IN (SELECT proj_leider FROM projecten WHERE proj_leider =35))
+
 2.7	De namen van projecten die uitgevoerd worden in dezelfde plaats als de woonplaats van werknemer BOS. 
 SELECT Naam, Woonplaats FROM werknemers WHERE Woonplaats IN (SELECT Woonplaats FROM werknemers WHERE Naam ="BOS")
+
 2.8	De namen van werknemers die in een andere plaats wonen dan werknemer 99. 
 SELECT Code, Naam, Woonplaats FROM werknemers WHERE NOT Woonplaats IN SELECT Woonplaats FROM werknemers WHERE Code =99)
+
 2.9	De namen van werknemers die een hoger salaris hebben dan werknemer 12. 
 SELECT Code, Naam, Salaris FROM werknemers WHERE Salaris IN(SELECT Salaris FROM werknemers WHERE Salaris > 2149)
+
 2.10	De namen van projecten waar werknemer MERK aan werkt. 
 SELECT proj_naam, proj_leider FROM projecten WHERE proj_leider IN (SELECT werknemers.Code FROM werknemers WHERE Naam ="MERK")
 2.11	De woonplaatsen van werknemers die aan hetzelfde project werken als werknemer MERK. 
 SELECT Woonplaats, naam FROM werknemers WHERE woonplaats IN (SELECT projecten.proj_plaats FROM projecten WHERE projecten.proj_plaats = (SELECT Woonplaats FROM werknemers WHERE naam = "MERK"))
+
 2.12	De namen van alle werknemers die in dezelfde salarisschaal vallen als werknemer BOS. 
 SELECT schaal,werknemers.Naam FROM schalen,werknemers WHERE schaal IN (SELECT schalen.schaal FROM werknemers WHERE schalen.schaal <>"BOS")
+
+
+2.13 
+SELECT werknemers.Code,werknemers.Naam,projecten.proj_code from projecten,werknemers
+
+2.14
+SELECT projecten.proj_naam,projecten.proj_code,werknemers.Code
+FROM werknemers,projecten
+
+2.15
+SELECT werknemers.Code, werknemers.Naam,projecten.proj_naam,projecten.proj_code,werk.uren from werknemers,projecten,werk where werknemers.code
+
+2.16
+SELECT werknemers.Naam,werk.uren FROM werknemers,werk
+
+2.17
+SELECT werknemers.Naam,werk.uren FROM werknemers,werk WHERE werknemers.Woonplaats IN ("UTRECHT")
+
+2.18
+SELECT projecten.proj_naam from projecten,werknemers where werknemers.Woonplaats in ("ROTTERDAM")
+
+2.19
+SELECT Naam, projecten.proj_naam, Woonplaats from werknemers,projecten,werk where werknemers.Code = werk.code AND werk.proj_code = projecten.proj_code AND werknemers.Woonplaats="AMSTERDAM"
