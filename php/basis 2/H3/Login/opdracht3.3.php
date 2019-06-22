@@ -1,9 +1,9 @@
 <?php
 
-$enteredEmail=$_POST['email'];
+$enteredName=$_POST['naam'];
 $enteredPassword=$_POST['wachtwoord'];
 
-if ($enteredEmail=="pepijn" && $enteredPassword=="pep"){
+if ($enteredName=="pepijn" && $enteredPassword=="pep"){
    
    		$url="Location: geheim.php";
 		   header($url);
