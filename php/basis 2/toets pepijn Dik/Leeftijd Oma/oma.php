@@ -9,13 +9,14 @@ if(empty($naam1) || empty($naam2) || empty($leeftijd1) || empty($leeftijd2) ){
 echo("Vul De velden in");
 }
 else {
-uitrekenen($leeftijd1,$leeftijd2,$naam1,$naam2);
+echo(uitrekenen($leeftijd1,$leeftijd2,$naam1,$naam2));
 }
 function uitrekenen($leeftijd1,$leeftijd2,$naam1, $naam2)
    {    
        if($leeftijd1 > 122 || $leeftijd2 > 122){
-           echo("Fout Melding!")
+           echo("Fout Melding!");
        }
+       
        if($leeftijd1 > $leeftijd2){
         return $naam1;
        }
