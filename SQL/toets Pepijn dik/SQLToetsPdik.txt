@@ -1,0 +1,34 @@
+
+Pepijn dik
+1 
+SELECT Woonplaats FROM `werknemers` GROUP BY Woonplaats
+2.
+SELECT Naam,Telefoon FROM `werknemers` WHERE Woonplaats="EINDHOVEN"
+3.
+-
+4.
+SELECT naam FROM werknemers WHERE NOT Woonplaats="MAASTRICHT" AND NOT Chef = 30 AND Salaris IN (2000,3500)
+5.
+SELECT naam FROM werknemers,projecten WHERE projecten.proj_code ="140"
+6.
+SELECT naam FROM werknemers,projecten WHERE projecten.proj_code ="110"
+7.
+SELECT naam FROM werknemers WHERE werknemers.Chef = NULL OR werknemers.Chef = "" AND werknemers.Salaris < "2350"
+8.
+SELECT MAX(SALARIS) 
+FROM WERKNEMERS WHERE NOT Woonplaats ="AMSTERDAM"
+9.
+SELECT Naam FROM werknemers ORDER BY Naam ASC 
+10.
+SELECT Naam FROM werknemers WHERE naam LIKE 'B%'
+11.
+SELECT DISTINCT(Woonplaats) FROM werknemers ORDER BY Woonplaats ASC 
+12.
+-
+13.
+SELECT projecten.proj_naam from werk,projecten WHERE werk.code = 47
+14
+SELECT werknemers.Naam,werknemers.Code FROM werknemers,projecten WHERE projecten.proj_leider = werknemers.Code
+15.
+Alles tussen de haakjes Geld als NOT 
+en bij het Uitroep teken geld het enkel voor wat er achter de = staat
