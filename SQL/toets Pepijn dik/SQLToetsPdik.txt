@@ -7,7 +7,7 @@ SELECT Naam,Telefoon FROM `werknemers` WHERE Woonplaats="EINDHOVEN"
 3.
 -
 4.
-SELECT naam FROM werknemers WHERE NOT Woonplaats="MAASTRICHT" AND NOT Chef = 30 AND Salaris IN (2000,3500)
+SELECT naam FROM werknemers WHERE NOT Woonplaats="MAASTRICHT" AND NOT Chef = 30 AND Salaris BETWEEN (2000,3500)
 5.
 SELECT naam FROM werknemers,projecten WHERE projecten.proj_code ="140"
 6.
@@ -22,9 +22,9 @@ SELECT Naam FROM werknemers ORDER BY Naam ASC
 10.
 SELECT Naam FROM werknemers WHERE naam LIKE 'B%'
 11.
-SELECT DISTINCT(Woonplaats) FROM werknemers ORDER BY Woonplaats ASC 
+SELECT COUNT(*) woonplaats FROM werknemers
 12.
--
+// SELECT Naam, COUNT(Chef) FROM werknemers WHERE Chef <=4
 13.
 SELECT projecten.proj_naam from werk,projecten WHERE werk.code = 47
 14
