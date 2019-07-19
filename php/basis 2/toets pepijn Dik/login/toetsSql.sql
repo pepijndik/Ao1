@@ -7,10 +7,13 @@
 -- Serverversie: 10.3.16-MariaDB
 -- PHP-versie: 7.3.6
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
+SET SQL_MODE
+= "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT
+= 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone
+= "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,19 +31,28 @@ SET time_zone = "+00:00";
 -- Tabelstructuur voor tabel `users`
 --
 
-CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `user_email` varchar(50) NOT NULL,
-  `user_password` varchar(50) NOT NULL,
-  `user_rank` int(1) DEFAULT NULL
+CREATE TABLE `users`
+(
+  `user_id` int
+(11) NOT NULL,
+  `username` varchar
+(50) NOT NULL,
+  `user_email` varchar
+(50) NOT NULL,
+  `user_password` varchar
+(50) NOT NULL,
+  `user_rank` int
+(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `user_email`, `user_password`, `user_rank`) VALUES
+INSERT INTO `users` (`
+user_id`,
+`username
+`, `user_email`, `user_password`, `user_rank`) VALUES
 (2, 'demo', 'demo@demo.nl', 'fe01ce2a7fbac8fafaed7c982a04e229', 3),
 (3, 'carla', 'carla@gmail.com', 'fe01ce2a7fbac8fafaed7c982a04e229', 3);
 
@@ -52,7 +64,8 @@ INSERT INTO `users` (`user_id`, `username`, `user_email`, `user_password`, `user
 -- Indexen voor tabel `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`);
+ADD PRIMARY KEY
+(`user_id`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
@@ -62,7 +75,8 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
